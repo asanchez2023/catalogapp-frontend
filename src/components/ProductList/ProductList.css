@@ -1,0 +1,13 @@
+.list-loading,
+.list-error {
+    padding: 24px;
+    text-align: center;
+}
+
+.list-loading {
+    color: #6b7280;
+}
+
+.list-error {
+    color: #dc2626;
+}

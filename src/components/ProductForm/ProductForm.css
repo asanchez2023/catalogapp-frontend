@@ -1,0 +1,103 @@
+.product-form {
+    max-width: 760px;
+}
+
+.product-form h2 {
+    margin: 0 0 28px;
+    color: var(--heading);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    outline: none;
+    background: var(--surface-hover);
+    color: var(--text);
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--text-secondary);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.form-group textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.field-error {
+    margin-top: 6px;
+    color: #f87171;
+    font-size: 13px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 28px;
+}
+
+.form-actions button {
+    border: none;
+    border-radius: 8px;
+    padding: 11px 20px;
+    font-weight: 600;
+    transition:
+        transform 0.15s ease,
+        opacity 0.15s ease;
+}
+
+.form-actions button:hover {
+    transform: translateY(-1px);
+}
+
+.form-actions button:active {
+    transform: translateY(0);
+}
+
+.form-actions button[type="submit"] {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.form-actions button[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+.form-actions button[type="button"] {
+    background: var(--surface-hover);
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+.form-actions button[type="button"]:hover {
+    background: var(--border);
+}
